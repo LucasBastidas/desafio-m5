@@ -1,0 +1,21 @@
+import { initTextComp } from "./components/text";
+import { initTitleComp } from "./components/title";
+import { initButtonComp } from "./components/button";
+import { initPiedraPapelTijeraCompComp } from "./components/piedra-papel-tijera";
+import { initResultadoComp } from "./components/resultado";
+import { initScoreTableComp } from "./components/score-table";
+import { initRouter } from "./router";
+import { state } from "./state";
+import { initCountDownComp } from "./components/countdown";
+(function () {
+	const root = document.querySelector(".root");
+	state.init();
+	initRouter(root);
+	initTitleComp();
+	initTextComp();
+	initButtonComp();
+	initPiedraPapelTijeraCompComp();
+	initResultadoComp();
+	initScoreTableComp();
+	initCountDownComp();
+})();
