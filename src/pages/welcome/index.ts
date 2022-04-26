@@ -38,9 +38,9 @@ export function initWelcomePage(params) {
       <button-element class="boton">Empezar</button-element>
       </div>
       <div class="manos-cont">
+      <piedra-papel-tijera select="tijera"></piedra-papel-tijera>
       <piedra-papel-tijera select="papel"></piedra-papel-tijera>
       <piedra-papel-tijera select="piedra"></piedra-papel-tijera>
-      <piedra-papel-tijera select="tijera"></piedra-papel-tijera>
       </div>
    `;
 	const boton = div.querySelector(".boton");

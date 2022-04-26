@@ -32,9 +32,9 @@ export function initReadyPage(params) {
 	div.innerHTML = `
    <countdown-element class="reloj" time=3></countdown-element>
    <div class="manos-cont">
-      <piedra-papel-tijera  select="papel" class="tijera"></piedra-papel-tijera>
-      <piedra-papel-tijera select="piedra" class="papel"></piedra-papel-tijera>
-      <piedra-papel-tijera  select="tijera" class="piedra"></piedra-papel-tijera>
+      <piedra-papel-tijera  select="tijera" class="tijera"></piedra-papel-tijera>
+      <piedra-papel-tijera select="papel" class="papel"></piedra-papel-tijera>
+      <piedra-papel-tijera  select="piedra" class="piedra"></piedra-papel-tijera>
       </div>
    `;
 	var computerMove = state.data.currentGame.computerPlay;
