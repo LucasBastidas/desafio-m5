@@ -149,6 +149,8 @@ export function initPlayPage(params) {
 	const botonReiniciar = div.querySelector(".boton-reiniciar");
 	botonReiniciar.addEventListener("click", () => {
 		localStorage.clear();
+		window.alert("Se reinció el score!");
+		params.goTo("/welcome");
 		state.init();
 	});
 
